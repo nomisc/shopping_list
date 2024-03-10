@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'welcome');
+Route::redirect('/', '/list');
+
+Route::redirect('dashboard', '/');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
@@ -22,5 +24,14 @@ Route::view('dashboard', 'dashboard')
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
+
+Route::view('list','shopping-list')
+    ->middleware(['auth'])
+    ->name('shopping-list');
+
+
+Route::view('export','export');
+
+Route::view('import','import');
 
 require __DIR__.'/auth.php';
