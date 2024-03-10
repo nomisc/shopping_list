@@ -45,3 +45,22 @@ Z ukazom `` php artisan db:seed `` se generirate dva testna uporabnika.
 2. uporabnik:
    uporabniško ime: mojca.test@gmail-test.com
    geslo: aaabbbccc
+
+### Delo v terminalu 
+Aplikacija omogoča uvoz in izvoz podatkov v terminalu. 
+
+#### Izvoz: 
+```
+php artisan shopping-list:export
+```
+Datoteka se izvozi na privzeto mesto. Download je možen preko web vmesnika. 
+
+#### UVOZ
+```
+php artisan shopping-list:import "file_location"
+```
+
+primer: 
+```
+php artisan shopping-list:import path_to_project/storage/app/export/20240310_223346_shopping_list.json
+```
