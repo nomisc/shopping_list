@@ -13,7 +13,7 @@ composer install
  
 npm install vite --save-dev
 
-npm build
+npm run build
 
 cp .env.example .env
 
