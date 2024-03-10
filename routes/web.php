@@ -19,7 +19,7 @@ Route::redirect('dashboard', '/list');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
-    ->name('shopping-list');
+    ->name('dashboard');
 
 Route::view('profile', 'profile')
     ->middleware(['auth'])
