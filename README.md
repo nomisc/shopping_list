@@ -36,3 +36,12 @@ Pri ključu EXPORT_LOCATION se definira lokaciji, kjer se bodo shranjevali izvoz
 ```
 EXPORT_LOCATION=shopping_list/
 ```
+
+### DEMO uporabnik
+Z ukazom `` php artisan db:seed `` se generirate dva testna uporabnika. 
+1. uporabnik:
+    uporabniško ime: miha.test@gmail-test.com
+    geslo: aaabbbccc
+2. uporabnik:
+   uporabniško ime: mojca.test@gmail-test.com
+   geslo: aaabbbccc
