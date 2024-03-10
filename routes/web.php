@@ -15,11 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', '/list');
 
-Route::redirect('dashboard', '/');
+Route::redirect('dashboard', '/list');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+    ->name('shopping-list');
 
 Route::view('profile', 'profile')
     ->middleware(['auth'])
